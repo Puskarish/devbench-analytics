@@ -214,6 +214,48 @@ const seedDatabase = async () => {
           { id: 4, text: 'Which component replaces the traditional <div> in React Native?', options: ['<Container>', '<Section>', '<View>', '<Box>'], correctAnswer: '<View>' },
           { id: 5, text: 'What is Expo?', options: ['A backend framework', 'A set of tools built around React Native', 'An animation library', 'A state management tool'], correctAnswer: 'A set of tools built around React Native' }
         ]
+      },
+      {
+        title: 'React Native Mobile',
+        description: 'Build native iOS and Android apps using React.',
+        category: 'Mobile',
+        price: 25,
+        questionsCount: 5,
+        questions: [
+          { id: 1, text: 'Which component is used to display text in React Native?', options: ['<p>', '<Text>', '<span>', '<Typography>'], correctAnswer: '<Text>' },
+          { id: 2, text: 'How do you handle touches/clicks in React Native?', options: ['onClick', 'onPress', 'onTouch', 'onTap'], correctAnswer: 'onPress' },
+          { id: 3, text: 'What acts as the primary layout engine in React Native?', options: ['CSS Grid', 'Bootstrap', 'Flexbox', 'Tailwind'], correctAnswer: 'Flexbox' },
+          { id: 4, text: 'Which component replaces the traditional <div> in React Native?', options: ['<Container>', '<Section>', '<View>', '<Box>'], correctAnswer: '<View>' },
+          { id: 5, text: 'What is Expo?', options: ['A backend framework', 'A set of tools built around React Native', 'An animation library', 'A state management tool'], correctAnswer: 'A set of tools built around React Native' }
+        ]
+      },
+      {
+        title: 'Cybersecurity Basics',
+        description: 'Fundamentals of network security and cryptography.',
+        category: 'Security',
+        price: 25,
+        questionsCount: 5,
+        questions: [
+          { id: 1, text: 'What does CIA triad stand for?', options: ['Confidentiality, Integrity, Availability', 'Computer, Internet, Access', 'Core, Infrastructure, Authentication', 'Control, Identity, Authorization'], correctAnswer: 'Confidentiality, Integrity, Availability' },
+          { id: 2, text: 'Which attack involves overwhelming a server with traffic?', options: ['SQL Injection', 'DDoS', 'Phishing', 'XSS'], correctAnswer: 'DDoS' },
+          { id: 3, text: 'What is a firewall?', options: ['A antivirus software', 'A security system that monitors network traffic', 'A password manager', 'A hardware storage device'], correctAnswer: 'A security system that monitors network traffic' },
+          { id: 4, text: 'What is encryption?', options: ['Deleting files', 'Converting data into a secret code', 'Hiding a folder', 'Compressing files'], correctAnswer: 'Converting data into a secret code' },
+          { id: 5, text: 'What is the purpose of a VPN?', options: ['To speed up internet', 'To secure your connection over the internet', 'To block websites', 'To download files faster'], correctAnswer: 'To secure your connection over the internet' }
+        ]
+      },
+      {
+        title: 'Cloud Computing Fundamentals',
+        description: 'Essential concepts of cloud infrastructure and services.',
+        category: 'DevOps',
+        price: 20,
+        questionsCount: 5,
+        questions: [
+          { id: 1, text: 'What is IaaS?', options: ['Infrastructure as a Service', 'Internet as a Service', 'Input as a Service', 'Image as a Service'], correctAnswer: 'Infrastructure as a Service' },
+          { id: 2, text: 'Which cloud provider offers AWS?', options: ['Microsoft', 'Amazon', 'Google', 'IBM'], correctAnswer: 'Amazon' },
+          { id: 3, text: 'What is a region in cloud computing?', options: ['A physical location with data centers', 'A software type', 'A network cable', 'An API'], correctAnswer: 'A physical location with data centers' },
+          { id: 4, text: 'What is serverless computing?', options: ['Computing without servers', 'Computing where the cloud provider manages infrastructure', 'Computing with no electricity', 'Computing without code'], correctAnswer: 'Computing where the cloud provider manages infrastructure' },
+          { id: 5, text: 'Which service is used for auto-scaling?', options: ['Load Balancer', 'Database', 'Storage', 'Firewall'], correctAnswer: 'Load Balancer' }
+        ]
       }
     ];
 
