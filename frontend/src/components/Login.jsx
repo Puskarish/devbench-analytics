@@ -14,7 +14,8 @@ const Login = () => {
     try {
       // Axios acts as the bridge here, sending the email/password to our Node backend
       // Note: We use the /api/auth proxy we set up in Vite to avoid CORS issues
-      const response = await axios.post('/api/auth/login', { email, password });
+      // const response = await axios.post('/api/auth/login', { email, password });
+      const response = await axios.post('https://devbench-api.onrender.com/login', { email, password });
       
       // If successful, the backend sends back a VIP wristband (JWT). We save it to localStorage.
       localStorage.setItem('token', response.data.token);

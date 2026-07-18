@@ -8,6 +8,8 @@ const Test = require('./models/Test');
 const TestScore = require('./models/TestScore');
 
 const app = express();
+const cors = require('cors');
+app.use(cors())
 const PORT = 3000;
 
 app.use(express.json());
