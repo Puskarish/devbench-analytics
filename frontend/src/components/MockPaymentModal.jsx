@@ -42,7 +42,7 @@ const MockPaymentModal = ({ isOpen, onClose, test, onSuccess }) => {
     setTimeout(async () => {
       try {
         const token = localStorage.getItem('token');
-        await axios.post('/api/payment/mock-checkout', { testId: test._id }, {
+        await axios.post('/payment/mock-checkout', { testId: test._id }, {
           headers: { Authorization: `Bearer ${token}` }
         });
         setLoading(false);
