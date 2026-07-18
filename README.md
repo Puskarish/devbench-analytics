@@ -80,22 +80,3 @@ Implementing the active test countdown timer proved complex. If the timer logic 
 
 **The Solution:**
 We mastered the `useEffect` hook to carefully control this side-effect. We built a robust dependency array `[timeLeft, loading, test]` that ensures the interval accurately ticks down one second at a time. Crucially, the cleanup function `return () => clearInterval(timer);` guarantees that if the component unmounts prematurely (e.g. if the user leaves the page), the interval is destroyed, completely eliminating memory leaks. When `timeLeft <= 0`, the effect safely orchestrates the `handleSubmitTest()` function.
-
-## 🚀 Deployment Guide (Vercel & Render)
-
-When you are ready to take DevBench live, deploying is straightforward:
-
-**1. Deploying the Backend (Render)**
-- Push your code to GitHub.
-- Create a new "Web Service" on Render and connect your repository.
-- Set the Root Directory to `backend`.
-- Build Command: `npm install`
-- Start Command: `node server.js`
-- Add your Environment Variables (`MONGO_URI`, `JWT_SECRET`). Render will provide you with a live backend URL (e.g., `https://devbench-api.onrender.com`).
-
-**2. Deploying the Frontend (Vercel)**
-- Connect your GitHub repository to Vercel.
-- Set the Framework Preset to `Vite`.
-- Set the Root Directory to `frontend`.
-- **Crucial Step:** In your `frontend/vite.config.js` or via Axios base URLs, ensure you change the API proxy target from `http://localhost:3000` to your new live Render URL.
-- Click Deploy! Vercel will instantly build and host your React application globally.
