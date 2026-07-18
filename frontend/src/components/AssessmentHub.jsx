@@ -26,6 +26,10 @@ const AssessmentHub = () => {
           axios.get('/tests', { headers: { Authorization: `Bearer ${token}` } }),
           axios.get('/me', { headers: { Authorization: `Bearer ${token}` } })
         ]);
+
+        // Add this line inside your fetchData function after axios.get
+        console.log("Tests from backend:", testsRes.data); 
+        setTests(testsRes.data);
         
         setTests(testsRes.data);
         setUnlockedTests(userRes.data.unlockedTests || []);
