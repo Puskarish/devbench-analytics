@@ -22,7 +22,7 @@ const ActiveTestArena = () => {
           return;
         }
 
-        const response = await axios.get(`/api/tests/${id}`, {
+        const response = await axios.get(`/tests/${id}`, {
           headers: { Authorization: `Bearer ${token}` }
         });
         
@@ -81,7 +81,7 @@ const ActiveTestArena = () => {
 
     try {
       // Send raw answers to backend for secure grading
-      const response = await axios.post('/api/scores', {
+      const response = await axios.post('/scores', {
         testId: id,
         answers: selectedAnswers
       }, {

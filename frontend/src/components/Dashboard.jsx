@@ -18,7 +18,7 @@ const Dashboard = () => {
         }
 
         // Securely fetch scores using the JWT token
-        const response = await axios.get('/api/scores', {
+        const response = await axios.get('/scores', {
           headers: { Authorization: `Bearer ${token}` }
         });
         setScores(response.data);

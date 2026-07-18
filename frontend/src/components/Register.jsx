@@ -13,7 +13,7 @@ const Register = () => {
     e.preventDefault();
     try {
       // await axios.post('/api/auth/signup', { username, email, password });
-      await axios.post('https://devbench-api.onrender.com/signup', { username, email, password });
+      await axios.post('/signup', { username, email, password });
       // On successful signup, redirect them to login page
       navigate('/login');
     } catch (err) {

@@ -23,8 +23,8 @@ const AssessmentHub = () => {
 
         // Fetch all tests and user profile (which now includes unlockedTests) concurrently!
         const [testsRes, userRes] = await Promise.all([
-          axios.get('/api/tests', { headers: { Authorization: `Bearer ${token}` } }),
-          axios.get('/api/auth/me', { headers: { Authorization: `Bearer ${token}` } })
+          axios.get('/tests', { headers: { Authorization: `Bearer ${token}` } }),
+          axios.get('/me', { headers: { Authorization: `Bearer ${token}` } })
         ]);
         
         setTests(testsRes.data);
