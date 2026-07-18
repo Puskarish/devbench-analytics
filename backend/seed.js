@@ -216,20 +216,6 @@ const seedDatabase = async () => {
         ]
       },
       {
-        title: 'React Native Mobile',
-        description: 'Build native iOS and Android apps using React.',
-        category: 'Mobile',
-        price: 25,
-        questionsCount: 5,
-        questions: [
-          { id: 1, text: 'Which component is used to display text in React Native?', options: ['<p>', '<Text>', '<span>', '<Typography>'], correctAnswer: '<Text>' },
-          { id: 2, text: 'How do you handle touches/clicks in React Native?', options: ['onClick', 'onPress', 'onTouch', 'onTap'], correctAnswer: 'onPress' },
-          { id: 3, text: 'What acts as the primary layout engine in React Native?', options: ['CSS Grid', 'Bootstrap', 'Flexbox', 'Tailwind'], correctAnswer: 'Flexbox' },
-          { id: 4, text: 'Which component replaces the traditional <div> in React Native?', options: ['<Container>', '<Section>', '<View>', '<Box>'], correctAnswer: '<View>' },
-          { id: 5, text: 'What is Expo?', options: ['A backend framework', 'A set of tools built around React Native', 'An animation library', 'A state management tool'], correctAnswer: 'A set of tools built around React Native' }
-        ]
-      },
-      {
         title: 'Cybersecurity Basics',
         description: 'Fundamentals of network security and cryptography.',
         category: 'Security',
